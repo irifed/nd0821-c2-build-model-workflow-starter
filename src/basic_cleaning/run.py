@@ -34,6 +34,10 @@ def go(args):
     logger.info("Converting review dates to datetime format")
     df['last_review'] = pd.to_datetime(df['last_review'])
 
+    logger.info("Removing lat/lon outliers")
+    idx = df['longitude'].between(-74.25, -73.50) & df['latitude'].between(40.5, 41.2)
+    df = df[idx].copy()
+
     logger.info("Saving cleaned dataframe as output artifact")
     df.to_csv("clean_sample.csv", index=False)
 
