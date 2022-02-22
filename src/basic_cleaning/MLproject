@@ -6,15 +6,15 @@ entry_points:
     parameters:
 
       input_artifact:
-        description: Input artifact name (csv file with dataset)
+        description: Input artifact name
         type: string
 
       output_artifact:
-        description: Output artifact name (csv file with dataset after basic cleaning)
+        description: Output artifact name
         type: string
 
       output_type:
-        description: Type of the output artifact (cleaned data)
+        description: Type of the output artifact
         type: string
 
       output_description:
@@ -22,11 +22,11 @@ entry_points:
         type: string
 
       min_price:
-        description: Parameter for removing price outliers: min price
+        description: Parameter for removing price outliers - min price
         type: string
 
       max_price:
-        description: Parameter for removing price outliers: min price
+        description: Parameter for removing price outliers - min price
         type: string
 
 
