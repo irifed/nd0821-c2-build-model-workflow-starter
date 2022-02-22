@@ -5,6 +5,8 @@ channels:
 dependencies:
   - mlflow=1.14.1
   - pytest=6.2.2
+  - pylint-2.12.2
+  - autopep8-1.6.0
   - ipython=7.21.0
   - notebook=6.2.0
   - jupyterlab=3.0.10
